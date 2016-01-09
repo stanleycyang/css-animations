@@ -1,0 +1,84 @@
+/* Change color class */
+.change-color {
+  
+  /* Describe the width and height of the div */
+  width: 100px;
+  height: 100px;
+  
+  /* Red background */
+  background-color: red;
+
+  /* Rounded borders */
+  border-radius: 5px;
+
+  /* Apply the animation */
+  -webkit-animation-name: changeColor; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  
+  animation-name: changeColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes changeColor {
+  /* Start from red */
+  0%{
+    background-color: red;
+  }
+  25%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: purple;
+  }
+  100%{
+    background-color: blue;
+  }
+}
+
+@keyframes changeColor{
+  /* Start from red */
+  0%{
+    background-color: red;
+  }
+  25%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: purple;
+  }
+  100%{
+    background-color: blue;
+  }
+}
+
+.spin {  
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  animation: spinning 5s infinite;
+  -webkit-animation: spinning 5s infinite;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);    
+    background-color: red;
+  }
+}
+
+@-webkit-keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);    
+    background-color: red;
+  }
+}
+
